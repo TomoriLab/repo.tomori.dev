@@ -1,0 +1,15 @@
+{
+  "ssh_host": null,
+  "remote_root": null,
+  "temporary_directory": null,
+  "manager": {
+    "database_path": null,
+    "web_container": null,
+    "api_base_url": null,
+    "api_port_environment": null,
+    "backup_directory": null,
+    "origin_certificate": null,
+    "private_key": null,
+    "metadata_overrides": {}
+  }
+}

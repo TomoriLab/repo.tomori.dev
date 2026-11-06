@@ -1,0 +1,9 @@
+{
+  "kf6-ki18n": "https://invent.kde.org/frameworks/ki18n",
+  "kf6-kirigami": "https://invent.kde.org/frameworks/kirigami",
+  "kirigami-addons": "https://invent.kde.org/libraries/kirigami-addons",
+  "kirigami-app-components": "https://invent.kde.org/libraries/kirigami-app-components",
+  "kwi": "https://invent.kde.org/utilities/kwi",
+  "libghostty-vt": "https://github.com/ghostty-org/ghostty",
+  "simdutf": "https://github.com/simdutf/simdutf"
+}

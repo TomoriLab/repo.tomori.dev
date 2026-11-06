@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: AGPL-3.0-only -->
+<html lang="$language" prefix="og: https://ogp.me/ns#" data-language-redirect="$language_redirect" data-default-suite="$default_suite" data-suite="$suite" data-view-path="$view_path" data-catalog-architecture="$catalog_architecture" data-catalog-targets="$catalog_targets" data-copy-success="$copy_success" data-copy-failure="$copy_failure" data-copy-label="$copy_label" data-copied-label="$copied_label">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="$page_description">
+  <meta name="color-scheme" content="light dark">
+  <title>$page_title</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="$title">
+  <meta property="og:title" content="$page_title">
+  <meta property="og:description" content="$page_description">
+  <meta property="og:url" content="$canonical_url">
+  <meta property="og:locale" content="$locale">
+  <meta property="og:locale:alternate" content="$alternate_locale">
+  <meta property="og:image" content="$social_image_url">
+  <meta property="og:image:secure_url" content="$social_image_url">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="$social_image_width">
+  <meta property="og:image:height" content="$social_image_height">
+  <meta property="og:image:alt" content="$logo_description">
+  <link rel="icon" type="image/png" href="$logo_url">
+  <link rel="canonical" href="$canonical_url">
+  <link rel="alternate" hreflang="ko" href="$base_url$korean_url">
+  <link rel="alternate" hreflang="en" href="$base_url$english_url">
+  <link rel="alternate" hreflang="x-default" href="$base_url/">
+  <script data-cfasync="false" src="/assets/language.js?v=$asset_version"></script>
+  <link rel="stylesheet" href="/assets/site.css?v=$asset_version">
+</head>
+<body>
+  <a class="skip-link" href="#content">$skip_to_content</a>
+  <header class="site-header">
+    <div class="site-container header-inner">
+      <a class="site-brand" href="/$language/" aria-label="$title">
+        <img class="brand-logo" src="$logo_url" width="56" height="56" alt="" decoding="async">
+        <span><strong>repo.tomori.dev</strong><span class="brand-caption">$title</span></span>
+      </a>
+      <div class="site-controls">
+        <nav class="languages" aria-label="$language_navigation">
+          <a href="$korean_url" lang="ko" hreflang="ko" data-language="ko"$korean_current>한국어</a>
+          <a href="$english_url" lang="en" hreflang="en" data-language="en"$english_current>English</a>
+        </nav>
+        <div class="theme-control" hidden>
+          <label for="theme-select" class="visually-hidden">$theme_label</label>
+          <select id="theme-select" aria-label="$theme_label">
+            <option value="system">$theme_system</option>
+            <option value="light">$theme_light</option>
+            <option value="dark">$theme_dark</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="site-container page-shell">
+    <header class="page-header">
+      <div class="page-introduction">
+        <p class="eyebrow">DEBIAN PACKAGE ARCHIVE</p>
+        <h1>$view_title</h1>
+        <p class="page-description">$view_intro</p>
+      </div>
+      <dl class="archive-facts" aria-label="$archive_summary">
+        <div><dt>$packages_heading</dt><dd>$package_count</dd></div>
+        <div><dt>$sources_heading</dt><dd>$source_count</dd></div>
+        <div><dt>$architecture_column</dt><dd>$architectures</dd></div>
+      </dl>
+    </header>
+    <section class="channel-card" aria-label="$suite_selection">
+      <div class="channel-heading"><span class="section-label">$suite_selection</span><span class="channel-description">$suite_description</span></div>
+      <nav class="suite-menu" aria-label="$suite_selection">$suite_navigation</nav>
+    </section>
+    <nav class="section-menu" aria-label="$section_navigation">$menu_navigation</nav>
+    <main id="content" tabindex="-1">$content</main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-container footer-grid">
+      <section class="footer-brand">
+        <div class="footer-brand-heading">
+          <img class="brand-logo footer-logo" src="$logo_url" width="64" height="64" alt="" loading="lazy" decoding="async">
+          <h2>repo.tomori.dev</h2>
+        </div>
+        <p>$introduction</p>
+        <p class="footer-compatibility">$compatibility</p>
+      </section>
+      <nav class="footer-resources" aria-label="$archive_resources">
+        <h2>$archive_resources</h2>
+        <a href="$release_url">$release_link</a>
+        <a href="/package-inventory.json">$inventory_link</a>
+        <a href="/pool/">$files_link</a>
+        <a href="/assets/fonts/OFL.txt">$font_license</a>
+      </nav>
+      <section class="footer-operator" aria-labelledby="operator-heading">
+        <h2 id="operator-heading">$operator_heading</h2>
+        <p class="operator-name">$operator_name</p>
+        <ul class="operator-links">$operator_links</ul>
+      </section>
+    </div>
+  </footer>
+  <p id="copy-status" class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

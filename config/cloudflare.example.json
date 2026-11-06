@@ -1,0 +1,31 @@
+{
+  "account_id": null,
+  "zone_id": null,
+  "dns_record": {
+    "id": null,
+    "type": "A",
+    "name": "repo.tomori.dev",
+    "content": null,
+    "ttl": 1,
+    "proxied": true
+  },
+  "configuration_rule": {
+    "ruleset_id": null,
+    "id": null,
+    "ref": "repo_tomori_strict_tls",
+    "description": "Validate TLS for repo.tomori.dev origin",
+    "expression": "http.host eq \"repo.tomori.dev\"",
+    "action": "set_config",
+    "action_parameters": {
+      "ssl": "strict"
+    },
+    "enabled": true
+  },
+  "origin_certificate": {
+    "id": null,
+    "hostnames": [
+      "repo.tomori.dev"
+    ],
+    "expires_on": null
+  }
+}

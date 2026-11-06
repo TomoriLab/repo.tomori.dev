@@ -1,0 +1,20 @@
+{
+  "name": "repo.tomori.dev",
+  "domains": [
+    "repo.tomori.dev"
+  ],
+  "upstreams": [],
+  "certificateId": null,
+  "accessListId": null,
+  "sslForced": true,
+  "hstsEnabled": true,
+  "hstsSubdomains": false,
+  "allowWebsocket": false,
+  "preserveHostHeader": true,
+  "enabled": false,
+  "geoblockMode": "override",
+  "geoblock": {
+    "enabled": false
+  },
+  "customPreHandlersJson": "[{\"handler\":\"headers\",\"response\":{\"set\":{\"X-Content-Type-Options\":[\"nosniff\"],\"Cache-Control\":[\"no-cache, max-age=0, must-revalidate\"]}}},{\"handler\":\"subroute\",\"routes\":[{\"match\":[{\"path\":[\"/pool/*\",\"/dists/unstable/main/binary-amd64/by-hash/*\",\"/dists/unstable/main/source/by-hash/*\",\"/dists/trixie/main/binary-amd64/by-hash/*\",\"/dists/trixie/main/source/by-hash/*\",\"/dists/unstable/main/binary-arm64/by-hash/*\",\"/dists/trixie/main/binary-arm64/by-hash/*\"]}],\"handle\":[{\"handler\":\"headers\",\"response\":{\"set\":{\"Cache-Control\":[\"public, max-age=31536000, immutable\"]}}}]}]},{\"handler\":\"file_server\",\"root\":null,\"browse\":{}}]"
+}

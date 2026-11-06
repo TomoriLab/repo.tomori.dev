@@ -1,0 +1,39 @@
+{
+  "origin": "Tomori",
+  "label": "Tomori Debian packages",
+  "description": "Debian packages and source archives",
+  "component": "main",
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "signing_fingerprint": "55A5EA46C60A959E75119B4F39F74FF9CEA87CC9",
+  "base_url": "https://repo.tomori.dev",
+  "valid_days": 30,
+  "default_suite": "unstable",
+  "legacy_suite": "unstable",
+  "suites": {
+    "unstable": {
+      "label": "Debian unstable",
+      "projects": [
+        "kwi",
+        "libghostty-vt",
+        "kirigami-app-components"
+      ]
+    },
+    "trixie": {
+      "label": "Debian 13 (trixie)",
+      "target_release": "tomori-trixie",
+      "projects": [
+        "kwi",
+        "libghostty-vt",
+        "kirigami-app-components",
+        "simdutf",
+        "kf6-ki18n",
+        "kf6-kirigami",
+        "kirigami-addons"
+      ],
+      "backports": true
+    }
+  }
+}

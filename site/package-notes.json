@@ -1,0 +1,14 @@
+{
+  "trixie": {
+    "kwi": {
+      "ko": "Qt 6.8.2의 private ABI를 사용합니다. 설치 시 이 저장소의 KI18n·Kirigami 6.30, Kirigami Addons 1.15 백포트와 simdutf가 함께 설치됩니다. Trixie의 KNotifications에는 알림 설정 API가 없어 해당 메뉴가 비활성화됩니다.",
+      "en": "Uses the Qt 6.8.2 private ABI. Installation also selects the KI18n and Kirigami 6.30 backports, Kirigami Addons 1.15, and simdutf from this repository. The notification configuration action is disabled because Trixie's KNotifications lacks that API."
+    }
+  },
+  "unstable": {
+    "kwi": {
+      "ko": "Qt 6.11.2의 private ABI를 요구합니다.",
+      "en": "Requires the Qt 6.11.2 private ABI."
+    }
+  }
+}
